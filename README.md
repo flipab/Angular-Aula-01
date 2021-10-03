@@ -1,6 +1,10 @@
 # AngularAula01
 
+<<<<<<< HEAD
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.8.
+=======
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+>>>>>>> 132caf0e9202eb83816135206770eb25d8ea9d66
 
 ## Development server
 

@@ -37,6 +37,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
+<<<<<<< HEAD
     browsers: ['ChromeHeadlessNoSandbox',
   ],
   customLaunchers: {
@@ -48,8 +49,25 @@ module.exports = function (config) {
       ],
     },
   },
+=======
+    browsers: [
+      'ChromeHeadlessNoSandbox',
+    ],
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: [
+          "--no-sandbox",
+          "--disable-setuid-sandbox",
+        ],
+      },
+    },
+>>>>>>> 132caf0e9202eb83816135206770eb25d8ea9d66
     singleRun: false,
     restartOnFileChange: true
   });
 };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 132caf0e9202eb83816135206770eb25d8ea9d66

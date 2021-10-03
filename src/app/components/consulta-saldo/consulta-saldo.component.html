@@ -1,0 +1,33 @@
+<section>
+  <h1>Consulta de saldo</h1>
+  <picture>
+    <img
+      src="https://i.pravatar.cc/160?img={{ cliente.id }}"
+      alt="Foto de perfil de {{ cliente.nome }}"
+    />
+  </picture>
+  <header>
+    <div class="atenuado">
+      Último login:
+      {{ cliente.ultimoLogin | date:'short' }}
+    </div>
+    <div>
+      <b>Cliente:</b>
+      {{ cliente.nome | uppercase }}
+    </div>
+    <div>
+      <b>Saldo:</b>
+      <span
+        [className]="cliente.saldo | classNamePorValor:confs"
+      >
+        {{ cliente.saldo | currency:'BRL' }}
+      </span>
+    </div>
+    <div *ngIf="cliente.creditoPreAprovado > 0">
+      <b>Crédito pré-aprovado:</b>
+      <span class="verde">
+        {{ cliente.creditoPreAprovado | currency:'BRL' }}
+      </span>
+    </div>
+  </header>
+</section>

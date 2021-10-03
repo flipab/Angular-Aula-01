@@ -22,7 +22,10 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive && \
     echo "Pacotes de SO instalados com sucesso!"
 ENV CHROME_BIN=/usr/bin/chromium
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 132caf0e9202eb83816135206770eb25d8ea9d66
 # [Optional] Uncomment if you want to install an additional version of node using nvm
 # ARG EXTRA_NODE_VERSION=10
 # RUN su node -c "source /usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
@@ -32,5 +35,8 @@ RUN su node -c "npm install -g @angular/cli" && \
     echo "Pacotes NPM instalados com sucesso!"
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 132caf0e9202eb83816135206770eb25d8ea9d66
